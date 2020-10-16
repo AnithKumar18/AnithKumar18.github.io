@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relax</title> 
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body> 
+    <header class="header"> 
+       <div class="container"> 
+         <nav class="nav">  
+             <a href="index.html" class="logo"> 
+                 <img src="./Image/logoUI.png" alt=""> 
+             </a> 
+             <div class="hamburger-menu">
+               <i class="fas fa-bars"></i>   
+               <i class="fas fa-times"></i>  
+             </div> 
+             <ul class="nav-list"> 
+               <li class="nav-item"> 
+                <a href="index.html" class="nav-link"><i class="fas fa-hotel"></i>Home</a> 
+               </li> 
+               <li class="nav-item"> 
+                <a href="#" class="nav-link"><i class="fas fa-landmark"></i>Our History</a> 
+               </li> 
+               <li class="nav-item"> 
+                <a href="#" class="nav-link"><i class="fas fa-percent"></i>Offers</a> 
+               </li> 
+               <li class="nav-item"> 
+                <a href="#" class="nav-link"><i class="far fa-newspaper"></i>News</a> 
+               </li> 
+               <li class="nav-item"> 
+                <a href="#" class="nav-link"><i class="fas fa-id-card"></i>Contacts</a> 
+               </li> 
+               <li class="nav-item"> 
+                <a href="#" class="nav-link"><i class="fas fa-sign-in-alt"></i>Log-in</a> 
+               </li>
+             </ul>
+         </nav>  
+       </div> 
+    </header> 
+    <main> 
+      <div class="hero"> 
+        <div class="container"> 
+          <div class="main-heading"> 
+            <h1 class="title">Explore</h1>
+            <h2 class="subtitle"> The Enjoyment</h2>
+          </div> 
+          <a href="#" class="btn btn-gradient">Exquisite Hotels
+            <span class="dots"><i class="fas fa-arrow-alt-circle-right"></i></span>
+          </a> 
+        </div>
+      </div> 
+      <section class="booking"> 
+        <div class="container">  
+          <form action="" class="form"> 
+            <div class="input-group"> 
+              <label for="destination" class="input-label">Destination</label> 
+              <input type="text" class="input" id="destination">
+            </div> 
+            <div class="input-group"> 
+              <label for="check-in" class="input-label">Check-In</label> 
+              <input type="date" class="input" id="check-in">
+            </div> 
+            <div class="input-group"> 
+              <label for="check-out" class="input-label">Check-Out</label> 
+              <input type="date" class="input" id="check-out">
+            </div> 
+            <div class="input-group"> 
+              <label for="adults" class="input-label">Adults</label>  
+              <select class="options" id="adults"> 
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option>
+              </select>
+            </div> 
+            <div class="input-group"> 
+              <label for="children" class="input-label">Children</label>  
+              <select class="options" id="children"> 
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option>
+              </select>
+            </div> 
+            <button type="submit" class="btn form-btn btn-purple">Search 
+              <span class="dots"><i class="fas fa-arrow-alt-circle-right"></i></span>
+            </button>
+          </form>
+        </div>
+      </section> 
+      <section class="hotels"> 
+        <div class="container"> 
+          <h5 class="section-head"> 
+            <span class="heading">Discover</span> 
+            <span class="sub-heading">Our Exquisite Hotels</span>
+          </h5> 
+          <div class="grid"> 
+            <div class="grid-item featured-hotels"> 
+              <img src="./Image/hotel_astro_resort.jpg" alt="" class="hotel-image"> 
+              <h5 class="hotel-name">Astro Hotel</h5> 
+              <span class="hotel-price">From RM200/Night</span> 
+              <div class="hotel-rating"> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star-half rating"></i>
+              </div> 
+              <a href="#" class="btn btn-gradient">Book Now 
+                <span class="dots"><i class="fas fa-arrow-alt-circle-right"></i></span>
+              </a>
+            </div> 
+             
+            <div class="grid-item featured-hotels"> 
+              <img src="./Image/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image"> 
+              <h5 class="hotel-name">Enchanted Garden</h5> 
+              <span class="hotel-price">From RM400/Night</span> 
+              <div class="hotel-rating"> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i>
+              </div> 
+              <a href="#" class="btn btn-gradient">Book Now 
+                <span class="dots"><i class="fas fa-arrow-alt-circle-right"></i></span>
+              </a>
+            </div> 
+             
+            <div class="grid-item featured-hotels"> 
+              <img src="./Image/hotel_the_paradise.jpg" alt="" class="hotel-image"> 
+              <h5 class="hotel-name">The Paradise Hotel</h5> 
+              <span class="hotel-price">From RM500/Night</span> 
+              <div class="hotel-rating"> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star rating"></i> 
+                <i class="fas fa-star-half rating"></i>
+              </div> 
+              <a href="#" class="btn btn-gradient">Book Now 
+                <span class="dots"><i class="fas fa-arrow-alt-circle-right"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <section>
+        
+      </section>
+    </main> 
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="Main.js"></script>  
+</body>
+</html>
