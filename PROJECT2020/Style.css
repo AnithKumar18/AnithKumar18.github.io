@@ -17,7 +17,10 @@
     --purple-light: #8f50fb;
     --yellow-solid: #fa9e2c;
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
-    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid)); 
+    --animation-properties: alternate-gradient 3s alternate infinite; 
+    --background-color: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f) 0 50%;
+    --background-size: 300% 300%;
 } 
 
 
@@ -28,7 +31,7 @@ html{
 body{ 
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.6rem; 
-    color: var(--dark-color);
+    background-color: var(--dark-color);
 } 
  
 a{ 
@@ -321,3 +324,109 @@ section{
    color: gold; 
 } 
  
+.pricing-table{ 
+   display: grid;  
+   grid-template-columns: 1fr 1fr 1fr; 
+   column-gap: 2.5rem;
+} 
+ 
+.table-item{ 
+    font-size: 2.5rem; 
+    text-transform: uppercase; 
+    text-align: center; 
+    color: #c2c2c2; 
+    padding: 2rem; 
+    position: relative; 
+    z-index: 1;
+} 
+ 
+.table-item::before, 
+.table-item::after{ 
+    content: ''; 
+    position: absolute;
+} 
+ 
+.table-item::before{ 
+    background-color: #151515; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    z-index: -1;
+}
+ 
+.table-item::after{ 
+    background: var(--background-color);  
+    background-size: var(--background-size);  
+    animation: var(--animation-properties);
+    top: -3px; 
+    left: -3px; 
+    width: calc(100% + (3px * 2)); 
+    height: calc(100% + (3px * 2)); 
+    z-index: -2;
+} 
+ 
+.table-item i { 
+    font-size: 10rem; 
+    margin-bottom: 2rem; 
+    padding: 1rem; 
+    background: var(--background-color);  
+    background-size: var(--background-size); 
+    animation: var(--animation-properties);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} 
+ 
+.subscription-type{  
+    letter-spacing: 1px; 
+    background: var(--background-color);  
+    background-size: var(--background-size); 
+    animation: var(--animation-properties);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} 
+ 
+.features-list{ 
+    list-style: none; 
+    margin: 1.5rem 0; 
+    letter-spacing: 1px;
+} 
+ 
+.features-item{ 
+    border-top: 1px solid rgba(255,255,255,.1); 
+    font-size: 1.3rem; 
+    line-height: 1.5; 
+    padding: 1.5rem 0;
+} 
+.features-item:last-child{  
+    border-bottom: 1px solid rgba(255,255,255,.1); 
+} 
+ 
+.subscription-price{ 
+    display: block;
+    font-size: 2.5rem;
+} 
+ 
+.cta{ 
+   display: inline-block;  
+   text-decoration: none; 
+   color: #c2c2c2; 
+   border: 2px solid rgba(255,255,255,.1); 
+   border-radius: 2rem; 
+   padding: 1rem 3rem; 
+   margin-top: 1.5rem;
+} 
+ 
+.cta:hover{ 
+    background: var(--gradient-color) 0 50%; 
+    border: none; 
+    color: #fff;
+} 
+ 
+@keyframes alternate-gradient{  
+    50%{ 
+        background-position: 100% 50%;
+    }
+}
