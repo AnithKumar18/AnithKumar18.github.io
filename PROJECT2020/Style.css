@@ -88,12 +88,38 @@ section{
 }  
 
 .btn-purple{  
-    background-color: var(--purple-solid); 
+   position: relative ; 
+   width: 200px; 
+   height: 60px; 
+   margin: 10px 0; 
+   font-size: small;  
+   color: #fff;
+   display: inline-flex; 
+   justify-content: center; 
+   text-decoration: none; 
+   transition: 0.5s;
 } 
  
 .btn-purple:hover{ 
-   background-color: #56247f; 
+   color: darkblue; 
+}  
+ 
+.btn-purple::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 0; 
+    height: 60px; 
+    background: url(./Image/btn-bg1.png); 
+    background-size: cover; 
+    transform-origin: left; 
+    transition: 0.5s;
 } 
+ 
+.btn-purple:hover:before{ 
+    width: 100%;
+}
 
 .dots{ 
   font-size: 2.5rem;   
