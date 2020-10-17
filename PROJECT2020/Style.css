@@ -89,11 +89,11 @@ section{
 
 .btn-purple{  
    position: relative ; 
-   width: 200px; 
-   height: 60px; 
+   width: 150px; 
+   height: 40px; 
    margin: 10px 0; 
    font-size: small;  
-   color: #fff;
+   color: var(--dark-color);
    display: inline-flex; 
    justify-content: center; 
    text-decoration: none; 
@@ -101,7 +101,7 @@ section{
 } 
  
 .btn-purple:hover{ 
-   color: darkblue; 
+    background: url(./Image/btn-bg1.png); 
 }  
  
 .btn-purple::before{ 
@@ -110,8 +110,7 @@ section{
     top: 0; 
     left: 0; 
     width: 0; 
-    height: 60px; 
-    background: url(./Image/btn-bg1.png); 
+    height: 40px; 
     background-size: cover; 
     transform-origin: left; 
     transition: 0.5s;
