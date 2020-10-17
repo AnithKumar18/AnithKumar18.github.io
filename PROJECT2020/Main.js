@@ -1,3 +1,7 @@
+const selectElement = function (element) { 
+  return document.querySelector(element);
+};
+  
 let header = document.querySelector('.header'); 
 let hamburgerMenu = document.querySelector('.hamburger-menu'); 
  
@@ -21,4 +25,14 @@ const options = {
  
 const darkmode = new Darkmode(options);
  
-darkmode.showWidget();
+darkmode.showWidget(); 
+ 
+//Scroll Reveal 
+window.sr = ScrollReveal ();
+ 
+sr.ScrollReveal('.animate-right', {  
+  origin: 'right', 
+  duration: 1000, 
+  distance: '25rem', 
+  delay: 600
+});

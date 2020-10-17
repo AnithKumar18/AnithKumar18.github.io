@@ -1,5 +1,5 @@
 /*Import the fonts used*/
-@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
 /*Basic reset*/
 *,
 *::before,
@@ -10,6 +10,10 @@
 }
 /*Custom properties*/
 :root {
+    --main-font: 'Source Sans Pro', sans-serif; 
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
     --dark-color: #2d2c2c;
     --purple-solid: #350a4f;
     --purple-transparent: rgba(53, 10, 79, .7);
@@ -31,7 +35,8 @@ html{
 body{ 
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.6rem; 
-    background-color: var(--dark-color);
+    background-color: var(--dark-color); 
+    overflow-x: hidden;
 } 
  
 a{ 
@@ -72,7 +77,10 @@ section{
 } 
  
 .btn-gradient{ 
-    background-image: var(--gradient-color);
+    background-image: var(--gradient-color); 
+    opacity: 0; 
+    animation: fadeDown .5s forwards; 
+    animation-delay: 1.5s;
 } 
  
 .btn-gradient:hover{ 
@@ -206,15 +214,26 @@ section{
 } 
  
 .title{ 
-    font-size: 4.8rem; 
-    text-transform: uppercase; 
-    letter-spacing: 3px;
+    font-size: 8.5rem; 
+    font-family:'Herr Von Muellerhoff', cursive; 
+    color: var(--secondary-font-color); 
+    font-weight: 100; 
+    line-height: .4; 
+    letter-spacing: 2px; 
+    opacity: 0; 
+    animation: fadeUp .5s forwards;  
+    animation-delay: .5s;
 }  
  
 .subtitle{ 
-    font-size: 3.6rem; 
-    font-weight: 300; 
-    font-family: 'Courgette', cursive;
+   color: #fff; 
+   font-size: 3.7rem; 
+   font-family: var(--main-font); 
+   text-transform: uppercase; 
+   font-weight: 900; 
+   letter-spacing: .5rem; 
+   margin-right: -.5rem; 
+   animation: scale .5s forwards;  
 }  
  
 .booking{ 
@@ -434,6 +453,37 @@ section{
     color: #fff;
 } 
  
+/*Animation Section*/ 
+@keyframes fadeUp { 
+    0%{ 
+        transform: translateY(4rem);
+    } 
+    100%{  
+        opacity: 1; 
+        transform: translateY(0);
+    }
+} 
+ 
+@keyframes scale { 
+    0%{ 
+        transform: scale(2);
+    } 
+    100%{  
+        opacity: 1; 
+        transform: scale(1);
+    }
+} 
+ 
+@keyframes fadeDown { 
+    0%{ 
+        transform: translateY(-1rem);
+    } 
+    100%{  
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
 @keyframes alternate-gradient{  
     50%{ 
         background-position: 100% 50%;
