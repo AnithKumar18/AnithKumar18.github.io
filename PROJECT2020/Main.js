@@ -26,13 +26,3 @@ const options = {
 const darkmode = new Darkmode(options);
  
 darkmode.showWidget(); 
- 
-//Scroll Reveal 
-window.sr = ScrollReveal ();
- 
-sr.ScrollReveal('.animate-right', {  
-  origin: 'right', 
-  duration: 1000, 
-  distance: '25rem', 
-  delay: 600
-});
