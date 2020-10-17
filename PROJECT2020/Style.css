@@ -268,8 +268,8 @@ section{
  
 .grid{ 
     display: grid; 
-    grid-template-columns: repeat(autofit, minmax(30rem, 1fr)); 
-    row-gap: 2.5rem; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 2.5rem;
 } 
  
 .grid-item{ 
