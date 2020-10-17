@@ -314,12 +314,17 @@ section{
     font-weight: 900; 
     letter-spacing: .5rem; 
     margin-right: -.5rem; 
-} 
+}  
+ 
+::placeholder{ 
+    color: inherit;
+}
  
 .grid{ 
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    column-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+    column-gap: 2.5rem; 
+    row-gap: 2.5rem;
 } 
  
 .grid-item{ 
@@ -375,9 +380,10 @@ section{
 } 
  
 .pricing-table{ 
-   display: grid;  
-   grid-template-columns: 1fr 1fr 1fr; 
-   column-gap: 2.5rem;
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
+    column-gap: 2.5rem; 
+    row-gap: 2.5rem;
 } 
 /*Offer Section*/
 .table-item{ 
