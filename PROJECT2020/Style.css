@@ -379,13 +379,14 @@ section{
    color: gold; 
 } 
  
+/*Offer Section*/
 .pricing-table{ 
     display: grid;  
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); 
     column-gap: 2.5rem; 
     row-gap: 2.5rem;
 } 
-/*Offer Section*/
+
 .table-item{ 
     font-size: 2.5rem; 
     text-transform: uppercase; 
@@ -488,7 +489,67 @@ section{
     background: var(--gradient-color) 0 50%; 
     border: none; 
     color: #fff;
+}  
+ 
+/*Rooms Section*/ 
+.rooms{ 
+    background-color: #f2f6f9; 
 } 
+ 
+.image-wrap{ 
+    position: relative; 
+    height: 25rem; 
+} 
+ 
+.image-wrap::after{ 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: var(--purple-transparent-alt);
+} 
+ 
+.room-image{ 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+} 
+ 
+.room-name{ 
+    font-size: 2.6rem; 
+    background-color: var(--yellow-solid); 
+    color: #fff; 
+    padding: .5rem 2rem; 
+    position: absolute; 
+    left: 0; 
+    bottom: 2.5rem; 
+    z-index: 10;
+} 
+ 
+.room-price{ 
+    display: block; 
+    font-size: 3.6rem; 
+    font-weight: bold; 
+    color: var(--yellow-solid); 
+} 
+ 
+.per-night{ 
+    color: var(--dark-color); 
+    font-size: 1.4rem; 
+    font-weight: 100;
+} 
+ 
+.rooms-btn{ 
+    color: var(--dark-color); 
+    padding: 0; 
+    transition: color .5s;
+} 
+ 
+.rooms-btn:hover{ 
+    color: var(--yellow-solid);
+}
  
 /*Animation Section*/ 
 @keyframes fadeUp { 
