@@ -212,7 +212,7 @@ section{
 .hero{
    width: 100%; 
    height: 100vh;  
-   background: url("./Image/Website\ wallpaper.jpg") center no-repeat; 
+   background: url("./Image/malaysia-desktop-background_020551783_166.jpg") center no-repeat; 
    background-size: cover;   
    display: flex; 
    align-items: center; 
@@ -437,15 +437,6 @@ section{
     color: transparent;
 }  
 
-.table-item:hover{ 
-    /*background: #da4357;*/
-    color: #fff; 
-    box-shadow: 0 0 15px rgba(53, 10, 79, .5); 
-    transform: scale(1.1); 
-    z-index: 1; 
-    border-radius: 25px;
-}
- 
 .subscription-type{  
     letter-spacing: 1px; 
     background: var(--background-color);  
@@ -521,7 +512,8 @@ section{
  
 .room-name{ 
     font-size: 2.6rem; 
-    background-color: var(--yellow-solid); 
+    background-color: var(--yellow-solid);  
+    border-style: outset;
     color: #fff; 
     padding: .5rem 2rem; 
     position: absolute; 
