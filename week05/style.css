@@ -1,0 +1,17 @@
+
+      table, tr, td {  
+        border-collapse:collapse; 
+        padding:10px;  
+        font-size:15px;
+      } 
+      th{  
+        color:white; 
+        background-color:green; 
+        border: 1px solid white;
+      } 
+      td{  
+        border:1px solid black;
+      } 
+       td:nth-child(3) {  
+       text-align:center;
+      } 
