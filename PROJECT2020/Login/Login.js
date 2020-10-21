@@ -31,4 +31,6 @@ function BookNow(guestName,guestEmail,guestPax,guestPassword){
    let guestPassword = document.getElementById("guestPassword").value; 
 
     BookNow(guestName,guestEmail,guestPax,guestPassword);
-  });
+  }); 
+   
+  
