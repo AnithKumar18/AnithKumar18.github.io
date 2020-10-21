@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
+    <title>Document</title>  
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="Login.css">
 </head>
 <body> 
     <div class="container">
-            <h2>Member Registration</h2> 
-        <label for = "guestName">Member Name : </label> 
-        <input id = "guestName" type = "text"/>  
-        <br/>
-        <label for = "guestEmail">Member Email : </label> 
-        <input id = "guestEmail" type = "text"/>  
-        <br/> 
-        <label for = "guestPax">Pax : </label> 
-        <input id = "guestPax" type = "number" min = "1" max = "20"/>   
-        <br/>  
-        <button id = "bookNow">Book Now</button> 
+        <h2 class="title">Sign-Up</h2>   
+        <div class="input-field"> 
+        <i class="fas fa-user"></i> 
+        <input id = "guestName" type = "text" placeholder="Username"/>
+        </div> 
+        <div class="input-field"> 
+        <i class="fas fa-envelope"></i>
+        <input id = "guestEmail" type = "text" placeholder="E-mail"/>  
+        </div> 
+        <div class="input-field"> 
+        <i class="fas fa-list-ol"></i>
+        <input id = "guestPax" type = "number" min = "1" max = "20" placeholder="Pax"/>   
+        </div> 
+        <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input id="guestPassword" type="text" placeholder="Password"/>
+        </div>
+        <button id = "bookNow" type="submit" class="btn-purple">Register</button> 
         <span id = "bookMsg"></span>  
-        <hr/>
- 
+        <hr/> 
+        <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+    </div>
     <script src="Login.js"></script>
 </body>
 </html>

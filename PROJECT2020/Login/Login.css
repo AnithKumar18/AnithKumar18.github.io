@@ -1,11 +1,12 @@
-body {
+:root {  
     --color-primary: #009579;
     --color-primary-dark: #007f67;
     --color-secondary: #252c6a;
     --color-error: #cc3333;
     --color-success: #4bb544;
     --border-radius: 4px;
-
+} 
+body {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -24,15 +25,77 @@ body {
     border-radius: var(--border-radius);
     background: #ffffff;
 }
-div, button { 
-    width: 100%;
-    padding: 1rem 2rem;
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: darkblue;
+.btn-purple{  
+    width: 150px;
+    background-color: #5995fd;
     border: none;
-    border-radius: var(--border-radius);
     outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
     cursor: pointer;
-    background: var(--color-primary);
+    transition: 0.5s;
+}  
+ 
+.title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+} 
+   
+  .input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+} 
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+} 
+  .social-text {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+}
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+}
+  
+  .social-icon {
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.45rem;
+    color: #333;
+    border-radius: 50%;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+  
+  .social-icon:hover {
+    color: #4481eb;
+    border-color: #4481eb;
 }
