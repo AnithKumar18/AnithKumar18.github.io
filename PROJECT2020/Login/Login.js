@@ -1,11 +1,66 @@
-function BookNow(guestName,guestEmail,guestPax,guestPassword){ 
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+
+form.addEventListener('submit', e => {
+	e.preventDefault();
+	
+	checkInputs();
+});
+
+function checkInputs() {
+	// trim to remove the whitespaces
+	const usernameValue = username.value.trim();
+	const emailValue = email.value.trim();
+	const passwordValue = password.value.trim();
+	
+	if(usernameValue === '') {
+		setErrorFor(username, 'Username cannot be blank');
+	} else {
+		setSuccessFor(username);
+	}
+	
+	if(emailValue === '') {
+		setErrorFor(email, 'Email cannot be blank');
+	} else if (!isEmail(emailValue)) {
+		setErrorFor(email, 'Not a valid email');
+	} else {
+		setSuccessFor(email);
+	}
+	
+	if(passwordValue === '') {
+		setErrorFor(password, 'Password cannot be blank');
+	} else {
+		setSuccessFor(password);
+	}
+	
+}
+
+function setErrorFor(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
+
+function setSuccessFor(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}
+	
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+ 
+function BookNow(username,email,password){ 
     let url = 'https://api.sheety.co/0296a26a9104fbbb400d264d4ed644b1/bookingApp/registration';
     let body = {
       registration: {
-        name:guestName, 
-        email:guestEmail, 
-        pax:guestPax, 
-        password:guestPassword
+        name:username, 
+        emailplain:email, 
+		passwordplain:password, 
       }
     }
     fetch(url, {
@@ -20,17 +75,30 @@ function BookNow(guestName,guestEmail,guestPax,guestPassword){
       // Do something with object
       console.log(json.registration); 
       document.getElementById("bookMsg").innerHTML = json.registration.name +  " successfully added"; 
-      GetBookings();
+      GetBookings(); 
     });
   }  
    
   document.getElementById("bookNow").addEventListener("click", function(){ 
-   let guestName = document.getElementById("guestName").value; 
-   let guestEmail = document.getElementById("guestEmail").value; 
-   let guestPax = document.getElementById("guestPax").value;  
-   let guestPassword = document.getElementById("guestPassword").value; 
+   let username = document.getElementById("username").value; 
+   let email = document.getElementById("email").value; 
+   let password = document.getElementById("password").value;  
 
-    BookNow(guestName,guestEmail,guestPax,guestPassword);
+    BookNow(username,email,password);
   }); 
-   
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

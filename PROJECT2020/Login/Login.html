@@ -13,28 +13,33 @@
     <link rel="stylesheet" href="Login.css">
 </head>
 <body> 
-    <div class="container">
-        <h2 class="title">Sign-Up</h2>   
-        <div class="input-field"> 
-        <i class="fas fa-user"></i> 
-        <input id = "guestName" type = "text" placeholder="Username"/>
-        </div> 
-        <div class="input-field"> 
-        <i class="fas fa-envelope"></i>
-        <input id = "guestEmail" type = "text" placeholder="E-mail"/>  
-        </div> 
-        <div class="input-field"> 
-        <i class="fas fa-list-ol"></i>
-        <input id = "guestPax" type = "number" min = "1" max = "20" placeholder="Pax"/>   
-        </div> 
-        <div class="input-field">
-        <i class="fas fa-lock"></i>
-        <input id="guestPassword" type="text" placeholder="Password"/>
-        </div>
-        <button id = "bookNow" type="submit" class="btn-purple">Register</button> 
+  <div class="container">
+    <div class="header">
+      <h2>Create Account</h2>
+    </div>
+    <form id="form" class="form">
+      <div class="form-control">
+        <input type="text" placeholder="Username" id="username" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <input type="email" placeholder="Email Address" id="email" />
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <input type="password" placeholder="Password" id="password"/>
+        <i class="fas fa-check-circle"></i>
+        <i class="fas fa-exclamation-circle"></i>
+        <small>Error message</small>
+      </div>
+    <button id = "bookNow" type="submit" class="btn-purple">Register</button> 
         <span id = "bookMsg"></span>  
-        <hr/> 
-        <p class="social-text">Or Sign up with social platforms</p>
+        <hr/>  
+      <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
                 <i class="fab fa-facebook-f"></i>
@@ -47,8 +52,9 @@
               </a>
               <a href="#" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
-              </a>
-    </div>
+              </a>   
+    </form>
+  </div>
     <script src="Login.js"></script>
 </body>
 </html>
