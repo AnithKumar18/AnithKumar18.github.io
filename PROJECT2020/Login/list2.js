@@ -14,8 +14,8 @@ function GetBookings(){
     
       for(var i = 0; i < json.registration.length; i++){   
         var gname = json.registration[i].name; //change
-        var gemail = json.registration[i].email; //change
-        var gpax = json.registration[i].pax; //change
+        var gemail = json.registration[i].emailplain; //change
+        var gpassword = json.registration[i].passwordplain; //change
         var gid = json.registration[i].id;  
         var buttonId = "delete" + gid;
      
@@ -23,7 +23,7 @@ function GetBookings(){
        row.insertCell(0).innerHTML = gid; 
        row.insertCell(1).innerHTML = gname; 
        row.insertCell(2).innerHTML = gemail; 
-       row.insertCell(3).innerHTML = gpax; 
+       row.insertCell(3).innerHTML = gpassword; 
        row.insertCell(4).innerHTML = ""; //Remarks
        row.insertCell(5).innerHTML = "<button id= '" + buttonId + "'class='btn btn-danger'>Delete</button><br/>";; 
 
@@ -45,3 +45,11 @@ function GetBookings(){
     } 
       
     
+
+
+
+
+
+
+
+

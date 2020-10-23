@@ -89,16 +89,7 @@ function BookNow(username,email,password){
 
 
 
-
-
-
-
-
-
-
-
-
-
+  
 
 
 
