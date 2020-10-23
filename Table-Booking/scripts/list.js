@@ -19,7 +19,7 @@ function GetBookings(){
         var gid = json.registration[i].id;  
         var buttonId = "delete" + gid;
      
-       let row = bookings.insertRow(registration.rows.length); 
+       let row = registration.insertRow(registration.rows.length); 
        row.insertCell(0).innerHTML = gid; 
        row.insertCell(1).innerHTML = gname; 
        row.insertCell(2).innerHTML = gemail; 
