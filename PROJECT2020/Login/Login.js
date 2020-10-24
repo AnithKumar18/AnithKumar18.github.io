@@ -55,7 +55,7 @@ function isEmail(email) {
 
  
 function BookNow(username,email,password){ 
-    let url = 'https://api.sheety.co/0296a26a9104fbbb400d264d4ed644b1/bookingApp/registration';
+    let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/bookingApp/registration';
     let body = {
       registration: {
         name:username, 
