@@ -8,6 +8,70 @@
     <link rel="stylesheet" href="booking.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+          <h2>Booking</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="hotels" class="input-label">List of Hotel</label>  
+                <select class="options" id="hotels"> 
+                  <option value="0">Astro Hotel</option> 
+                  <option value="1">Enchanted Hotel</option> 
+                  <option value="2">Elite Hotel</option> 
+                  <option value="3">Gun Hotel</option> 
+                  <option value="4">The Garden</option> 
+                  <option value="5">Hotel Istana</option>
+                </select>
+              </div>  
+              <div class="form-control">
+                <label for="adult" class="input-label">Adults</label>  
+                    <select class="options" id="adult"> 
+                        <option value="0">0</option> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option> 
+                        <option value="3">3</option> 
+                        <option value="4">4</option> 
+                        <option value="5">5</option>
+                    </select>
+              </div>  
+              <div class="form-control">
+                <label for="children" class="input-label">Children</label>  
+                    <select class="options" id="children"> 
+                        <option value="0">0</option> 
+                        <option value="1">1</option> 
+                        <option value="2">2</option> 
+                        <option value="3">3</option> 
+                        <option value="4">4</option> 
+                        <option value="5">5</option>
+                    </select>
+              </div> 
+            <div class="form-control">
+            <label for="check-in" class="input-label">Check-In</label> 
+              <input type="date" class="input" id="checkin">
+          </div> 
+          <div class="form-control">
+            <label for="check-in" class="input-label">Check-Out</label> 
+              <input type="date" class="input" id="checkout">
+          </div>
+          <div class="form-control">
+            <input type="email" placeholder="Member Email Address" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="Member Password" id="password"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+        <button id = "bookNow" type="submit" class="btn-purple">Book Now</button>  
+        <span id = "bookMsg"></span>   
+            <hr/>  
+            <a href="listbooking.html" class="btn-primary" role="button" aria-pressed="true">View Booking</a> 
+        </form>
+      </div>
+        <script src="booking.js"></script>
 </body>
 </html>
