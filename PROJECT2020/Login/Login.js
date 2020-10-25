@@ -55,12 +55,12 @@ function isEmail(email) {
   
  
 function BookNow(username,email,password){  
-let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/registration/login';
+let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/bookingApp/registration';
 let body = {
-  login: {
-	name:username, 
+  registration: {
+	nameplain:username, 
     emailplain:email, 
-    passplain:password,
+    passwordplain:password,
   }
 }
 fetch(url, {
@@ -73,8 +73,8 @@ fetch(url, {
 .then((response) => response.json())
 .then(json => {
   // Do something with object
-  console.log(json.login);
-  document.getElementById("bookMsg").innerHTML = json.login.name +  " successfully added"; 
+  console.log(json.registration);
+  document.getElementById("bookMsg").innerHTML = json.registration.nameplain  +  " successfully added"; 
     GetBookings(); 
 }); 
 }
