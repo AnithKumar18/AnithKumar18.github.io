@@ -60,7 +60,7 @@ let body = {
   login: {
 	name:username, 
     emailplain:email, 
-    passplain:password
+    passplain:password,
   }
 }
 fetch(url, {

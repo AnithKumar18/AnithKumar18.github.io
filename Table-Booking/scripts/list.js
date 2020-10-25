@@ -3,7 +3,7 @@ window.addEventListener("load",function(){
 }); 
  
 function GetBookings(){
-    let url = 'https://api.sheety.co/0296a26a9104fbbb400d264d4ed644b1/bookingApp/registration';
+    let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/bookingApp/registration';
     fetch(url)
     .then((response) => response.json())
     .then(json => {
@@ -14,8 +14,8 @@ function GetBookings(){
     
       for(var i = 0; i < json.registration.length; i++){   
         var gname = json.registration[i].name; //change
-        var gemail = json.registration[i].email; //change
-        var gpax = json.registration[i].pax; //change
+        var gemail = json.registration[i].emailplain; //change
+        var gpax = json.registration[i].passplain; //change
         var gid = json.registration[i].id;  
         var buttonId = "delete" + gid;
      
