@@ -335,17 +335,8 @@ h4{
  
 .input-group{ 
     margin-bottom: 1.5rem;
-} 
- 
-.input-label{ 
-    display: block; 
-    font-size: 1.3rem; 
-    text-transform: uppercase; 
-    color: #fff; 
-    font-weight: bold; 
-    margin-bottom: 1rem;
-}
- 
+}  
+
 .input, 
 .options{ 
     outline: none; 
