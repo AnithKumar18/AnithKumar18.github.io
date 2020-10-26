@@ -19,8 +19,7 @@ function BookNow(guestName,guestEmail,guestPax,guestRemark){
     .then(json => {
       // Do something with object
       console.log(json.booking); 
-     // document.getElementById("bookMsg").innerHTML = json.booking.name +  " successfully added"; 
-     // GetBookings();
+     alert(json.booking.name + "successfully added"); 
     });
   }  
 window.addEventListener("load", function(){ 
@@ -31,7 +30,7 @@ window.addEventListener("load", function(){
         let guestRemarks = document.getElementById("guestRemarks").value;  
      
      
-         console.log(guestName + "," + guestEmail + "," + guestPax + "," + guestRemarks); 
+        BookNow(guestName,guestEmail,guestPax,guestRemarks);
 
     }); 
  
