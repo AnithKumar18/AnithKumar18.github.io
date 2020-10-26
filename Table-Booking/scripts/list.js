@@ -15,7 +15,7 @@ function GetBookings(){
       for(var i = 0; i < json.registration.length; i++){   
         var gname = json.registration[i].nameplain; //change
         var gemail = json.registration[i].emailplain; //change
-        var gpax = json.registration[i].passowrdplain; //change
+        var gpax = json.registration[i].passwordplain; //change
         var gid = json.registration[i].id;  
         var buttonId = "delete" + gid;
      
