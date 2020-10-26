@@ -244,7 +244,7 @@ section{
     font-family:'Herr Von Muellerhoff', cursive; 
     color: var(--secondary-font-color); 
     font-weight: 100; 
-    line-height: .4; 
+    line-height: .7; 
     letter-spacing: 2px; 
     opacity: 0; 
     animation: fadeUp .5s forwards;  
@@ -259,9 +259,75 @@ section{
    font-weight: 900; 
    letter-spacing: .5rem; 
    margin-right: -.5rem; 
-   animation: scale .5s forwards;  
+   animation: scale .5s forwards;    
+   line-height: .4;  
+}  
+  
+.separator{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+} 
+ 
+.line{ 
+    width: 100%; 
+    max-width: 8.4rem; 
+    height: 1.25rem; 
+    background-color: white; 
+    position: relative;  
+    opacity: 0;
+    animation: grow 2s forwards; 
+    animation-delay: .9s; 
+} 
+ 
+.line-right::before,
+.line-left::before{ 
+    content: ''; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border: .6rem solid transparent;  
+    opacity: 0;
+    animation: grow -5s forwards; 
+    animation-delay: 1.2s;
+} 
+ 
+.line-right::before{ 
+    border-right-color: white; 
+    right: 0;
+} 
+ 
+.line-left::before{ 
+    border-right-color: white; 
+    left: 0;
 }  
  
+.asterisk{ 
+    font-size: 1.2rem; 
+    color: var(--secondary-font-color); 
+    margin: 0 1.6rem;  
+    opacity: 0;
+    animation: spin -5s forwards; 
+    animation-delay: .7s;
+} 
+ 
+.single-animation{ 
+   opacity: 0; 
+   animation: fadeDown .5s forwards; 
+   animation-delay: 1.5s; 
+}
+  
+h4{  
+    color: #fff; 
+    font-size: 1.4rem; 
+    font-weight: 100; 
+    text-transform: uppercase; 
+    margin-bottom: 1.2rem; 
+    letter-spacing: 3px; 
+    margin-right: -3px;  
+    text-align: center;
+}
+   
 .booking{ 
     background-image: var(--gradient-color); 
     background-size: auto; 
@@ -754,6 +820,16 @@ section{
     }
 } 
  
+@keyframes grow { 
+    0%{ 
+        width: 0;
+    } 
+    100%{  
+        opacity: 1; 
+        width: 100%;
+    }
+}  
+
 @keyframes fadeDown { 
     0%{ 
         transform: translateY(-1rem);
@@ -762,7 +838,18 @@ section{
         opacity: 1; 
         transform: translateY(0);
     }
-}
+} 
+ 
+@keyframes spin { 
+    0%{ 
+        transform: rotate(0);
+    } 
+    100%{  
+        opacity: 1; 
+        transform: rotate(-360deg);
+    }
+}  
+ 
 
 @keyframes alternate-gradient{  
     50%{ 
