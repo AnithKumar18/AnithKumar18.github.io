@@ -55,37 +55,37 @@ function isEmail(email) {
   
  
 function BookNow(username,email,password){  
-let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/bookingApp/registration';
-let body = {
-  registration: {
-	nameplain:username, 
-    emailplain:email, 
-    passwordplain:password,
-  }
-}
-fetch(url, {
-  method: 'POST',
-  body: JSON.stringify(body), 
-  headers: { 
-	"Content-Type":"application/json"
-   }
-})
-.then((response) => response.json())
-.then(json => {
-  // Do something with object
-  console.log(json.registration);
-  document.getElementById("bookMsg").innerHTML = json.registration.nameplain  +  " successfully added"; 
-    GetBookings(); 
-}); 
-}
-
-document.getElementById("bookNow").addEventListener("click", function(){ 
-	let username = document.getElementById("username").value; 
-	let email = document.getElementById("email").value; 
-	let password = document.getElementById("password").value;  
- 
-	 BookNow(username,email,password);
-   }); 
+	let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/memberRegistration/memberLogin';
+	let body = {
+	  memberLogin: {
+		name:username, 
+		emailplain:email, 
+		passwordplain:password
+	  }
+	}
+	fetch(url, {
+	  method: 'POST',
+	  body: JSON.stringify(body), 
+	  headers: { 
+	  "Content-Type":"application/json"
+	 }
+	})
+	.then((response) => response.json())
+	.then(json => {
+	  // Do something with object
+	  console.log(json.memberLogin); 
+	  document.getElementById("bookMsg").innerHTML = json.memberLogin.name  +  " successfully added"; 
+	  GetBookings();
+	}); 
+} 
+   
+	document.getElementById("bookNow").addEventListener("click", function(){ 
+	  let username = document.getElementById("username").value; 
+	  let email = document.getElementById("email").value; 
+	  let password = document.getElementById("password").value;  
+   
+	   BookNow(username,email,password);
+	 }); 
  
   
 
