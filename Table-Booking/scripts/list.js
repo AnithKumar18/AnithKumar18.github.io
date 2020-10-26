@@ -14,8 +14,8 @@ function GetBookings(){
     
       for(var i = 0; i < json.booking.length; i++){   
         var gname = json.booking[i].name; //change
-        var gemail = json.booking[i].emailplain; //change
-        var gpax = json.booking[i].passplain; //change
+        var gemail = json.booking[i].email; //change
+        var gpax = json.booking[i].pass; //change
         var gid = json.booking[i].id;  
         var buttonId = "delete" + gid;
      
