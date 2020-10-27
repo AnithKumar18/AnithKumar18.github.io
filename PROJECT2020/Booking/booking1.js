@@ -25,15 +25,15 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
     });
   }  
   window.addEventListener("load", function(){ 
-  document.getElementById("bookNow").addEventListener("click", function(){ 
-   let hotels = document.getElementById("hotels").value; 
-   let adults = document.getElementById("adults").value; 
-   let children = document.getElementById("children").value;   
-   let troom = document.getElementById("troom").value;   
-   let checkin = document.getElementById("checkin").value; 
-   let checkout = document.getElementById("checkout").value; 
+      document.getElementById("bookNow").addEventListener("click", function(){ 
+          let hotels = document.getElementById("hotels").value; 
+          let adults = document.getElementById("adults").value; 
+          let children = document.getElementById("children").value;   
+          let troom = document.getElementById("troom").value;   
+          let checkin = document.getElementById("checkin").value; 
+          let checkout = document.getElementById("checkout").value; 
 
-    BookNow(hotels,adults,children,troom,checkin,checkout);
-  }); 
+            BookNow(hotels,adults,children,troom,checkin,checkout);
+       }); 
    
   });
