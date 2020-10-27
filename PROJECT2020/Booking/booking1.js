@@ -24,7 +24,7 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
            alert(json.booking.name + "successfully added"); 
     });
   }  
-  /*window.addEventListener("load", function(){ */
+  window.addEventListener("load", function(){ 
       document.getElementById("bookNow").addEventListener("click", function(){ 
           let a = document.getElementById("hotels").value; 
           let b = document.getElementById("adults").value; 
@@ -36,4 +36,4 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
             BookNow(a,b,c,d,e,f);
        }); 
    
-  /*});*/
+  });
