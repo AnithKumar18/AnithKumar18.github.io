@@ -25,7 +25,8 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
     });
   }  
   window.addEventListener("load", function(){ 
-      document.getElementById("bookNow").addEventListener("click", function(){ 
+      document.getElementById("bookNow").addEventListener("click", function(e){  
+        e.preventDefault();
           let a = document.getElementById("hotels").value; 
           let b = document.getElementById("adults").value; 
           let c = document.getElementById("children").value;   
