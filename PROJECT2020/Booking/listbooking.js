@@ -13,9 +13,9 @@ function GetBookings(){
       var bookingIds=[];
     
       for(var i = 0; i < json.booking.length; i++){   
-        var glist = json.booking[i].list; //change
-        var gadult = json.booking[i].adults; //change
-        var gchildren = json.booking[i].childrens; //change 
+        var glist = json.booking[i].name; //change
+        var gadult = json.booking[i].pa; //change
+        var gchildren = json.booking[i].pc; //change 
         var groom = json.booking[i].troom;
         var gcheckin = json.booking[i].ci; 
         var gcheckout = json.booking[i].co;
