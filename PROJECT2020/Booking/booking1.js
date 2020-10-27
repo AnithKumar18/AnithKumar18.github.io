@@ -1,13 +1,13 @@
 function BookNow(hotels,adults,children,troom,checkin,checkout){ 
-    let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/hotel/booking';
+    let url = 'https://api.sheety.co/8a1a6f330286ba0ec0dacda0b91ee751/hotel/booking';
     let body = {
       booking: {
         name:hotels, 
         pa:adults, 
         pc:children, 
         room:troom,
-        ci:checkin,
-        co:checkout
+        checki:checkin,
+        checko:checkout
       }
     }
     fetch(url, {
