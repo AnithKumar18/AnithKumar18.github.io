@@ -9,7 +9,7 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
         ci:checkin,
         co:checkout
       }
-    };
+    }
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),
