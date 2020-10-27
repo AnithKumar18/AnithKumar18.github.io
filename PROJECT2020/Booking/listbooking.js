@@ -16,7 +16,7 @@ function GetBookings(){
         var glist = json.booking[i].name; //change
         var gadult = json.booking[i].pa; //change
         var gchildren = json.booking[i].pc; //change 
-        var groom = json.booking[i].troom;
+        var groom = json.booking[i].room;
         var gcheckin = json.booking[i].ci; 
         var gcheckout = json.booking[i].co;
         var gid = json.booking[i].id;  
