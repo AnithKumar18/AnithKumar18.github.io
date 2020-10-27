@@ -21,11 +21,11 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
     .then(json => {
     // Do something with object
     console.log(json.booking);
-      document.getElementById("bookMsg").innerHTML = json.booking.name +  " successfully added"; 
-      GetBookings();
+    alert(json.booking.name + "successfully added"); 
+
     });
   }  
-   
+  window.addEventListener("load", function(){ 
   document.getElementById("bookNow").addEventListener("click", function(){ 
    let hotels = document.getElementById("hotels").value; 
    let adults = document.getElementById("adults").value; 
@@ -33,6 +33,8 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
    let troom = document.getElementById("troom").value;   
    let checkin = document.getElementById("checkin").value; 
    let checkout = document.getElementById("checkout").value; 
-   
+
     BookNow(hotels,adults,children,troom,checkin,checkout);
+  }); 
+   
   });
