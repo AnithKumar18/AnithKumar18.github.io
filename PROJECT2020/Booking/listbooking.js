@@ -3,7 +3,7 @@ window.addEventListener("load",function(){
 }); 
  
 function GetBookings(){
-    let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/bookingRegistration/book';
+    let url = 'https://api.sheety.co/5f27de59602f8acb8e232273e1aa592a/hotel/booking';
     fetch(url)
     .then((response) => response.json())
     .then(json => {
@@ -12,23 +12,25 @@ function GetBookings(){
       var bookings = document.getElementById("booking-list");   
       var bookingIds=[];
     
-      for(var i = 0; i < json.book.length; i++){   
-        var glist = json.book[i].list; //change
-        var gadult = json.book[i].adults; //change
-        var gchildren = json.book[i].childrens; //change
-        var gcheckin = json.book[i].checkins; 
-        var gcheckout = json.book[i].checkouts;
-        var gid = json.book[i].id;  
+      for(var i = 0; i < json.booking.length; i++){   
+        var glist = json.booking[i].list; //change
+        var gadult = json.booking[i].adults; //change
+        var gchildren = json.booking[i].childrens; //change 
+        var groom = json.booking[i].troom;
+        var gcheckin = json.booking[i].ci; 
+        var gcheckout = json.booking[i].co;
+        var gid = json.booking[i].id;  
         var buttonId = "delete" + gid;
      
        let row = bookings.insertRow(bookings.rows.length); 
        row.insertCell(0).innerHTML = gid; 
        row.insertCell(1).innerHTML = glist; 
        row.insertCell(2).innerHTML = gadult; 
-       row.insertCell(3).innerHTML = gchildren; 
-       row.insertCell(4).innerHTML = gcheckin; 
-       row.insertCell(5).innerHTML = gcheckout; 
-       row.insertCell(6).innerHTML = "<button id= '" + buttonId + "'class='btn btn-danger'>Delete</button><br/>";; 
+       row.insertCell(3).innerHTML = gchildren;  
+       row.insertCell(4).innerHTML = groom;  
+       row.insertCell(5).innerHTML = gcheckin; 
+       row.insertCell(6).innerHTML = gcheckout; 
+       row.insertCell(7).innerHTML = "<button id= '" + buttonId + "'class='btn btn-danger'>Delete</button><br/>";; 
 
 
        
