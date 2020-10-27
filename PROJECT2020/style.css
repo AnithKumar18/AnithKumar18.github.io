@@ -664,12 +664,11 @@ h4{
  
  .footer-heading{ 
      text-transform: uppercase; 
-     margin-bottom: 2.5rem; 
-     text-align: center;
+     margin-bottom: 2.5rem;  
  }
  
  .social-media{ 
-     display: flex;
+     display: flex; 
  }
   
  .sm-link{ 
