@@ -27,11 +27,12 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
   }  
    
   document.getElementById("bookNow").addEventListener("click", function(){ 
-   let s = document.getElementById("hotels").value; 
-   let t = document.getElementById("adults").value; 
-   let u = document.getElementById("children").value;   
-   let v = document.getElementById("troom").value;   
-   let w = document.getElementById("checkin").value; 
-   let x = document.getElementById("checkout").value;
-    BookNow(s,t,u,v,w,x);
+   let hotels = document.getElementById("hotels").value; 
+   let adults = document.getElementById("adults").value; 
+   let children = document.getElementById("children").value;   
+   let troom = document.getElementById("troom").value;   
+   let checkin = document.getElementById("checkin").value; 
+   let checkout = document.getElementById("checkout").value; 
+   
+    BookNow(hotels,adults,children,troom,checkin,checkout);
   });
