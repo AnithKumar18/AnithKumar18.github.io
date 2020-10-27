@@ -6,8 +6,8 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
         pa:adults, 
         pc:children, 
         room:troom,
-        ci:checkin,
-        co:checkout
+        /*ci:checkin,
+        co:checkout*/
       }
     };
     fetch(url, {
@@ -31,10 +31,10 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
    let adults = document.getElementById("adults").value; 
    let children = document.getElementById("children").value;   
    let troom = document.getElementById("troom").value;   
-   let checkin = document.getElementById("checkin").value; 
-   let checkout = document.getElementById("checkout").value; 
+   /*let checkin = document.getElementById("checkin").value; 
+   let checkout = document.getElementById("checkout").value; */
 
-    BookNow(hotels,adults,children,troom,checkin,checkout);
+    BookNow(hotels,adults,children,troom);
   }); 
    
   });
