@@ -30,8 +30,8 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
           let b = document.getElementById("adults").value; 
           let c = document.getElementById("children").value;   
           let d = document.getElementById("troom").value;   
-          let e = document.getElementById("checkin").value; 
-          let f = document.getElementById("checkout").value; 
+          let e = document.getElementById("checkin").value(); 
+          let f = document.getElementById("checkout").value(); 
 
             BookNow(a,b,c,d,e,f);
        }); 
