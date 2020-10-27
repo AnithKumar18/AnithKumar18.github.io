@@ -20,7 +20,7 @@
           <div class="form-row">
             <div class="form-group col-md-4">   
                 <label for="hotels" class="input-label">List of Hotel</label>  
-                <select class="options" id="hotels"> 
+                <select class="options" id="hotels" required> 
                   <option>Astro Hotel</option> 
                   <option>Enchanted Hotel</option> 
                   <option>Elite Hotel</option> 
@@ -31,7 +31,7 @@
               </div>  
               <div class="form-group col-md-4">
                 <label for="adults" class="input-label">Adults</label>  
-                    <select class="options" id="adults"> 
+                    <select class="options" id="adults" required> 
                         <option>0</option> 
                         <option>1</option> 
                         <option>2</option> 
@@ -42,7 +42,7 @@
               </div>  
               <div class="form-group col-md-4">
                 <label for="children" class="input-label">Children</label>  
-                    <select class="options" id="children"> 
+                    <select class="options" id="children" required> 
                         <option>0</option> 
                         <option>1</option> 
                         <option>2</option> 
@@ -53,7 +53,7 @@
               </div>   
               <div class="form-group col-md-4">
                 <label for="troom" class="input-label">Type of Rooms</label>  
-                    <select class="options" id="troom"> 
+                    <select class="options" id="troom" required> 
                         <option>VIP</option> 
                         <option>Excutive</option> 
                         <option>Penthouse</option> 
@@ -64,11 +64,11 @@
               </div> 
               <div class="form-group col-md-4">
                 <label for="checkin" class="input-label">Check-In</label> 
-                <input type="date" class="options" id="checkin">
+                <input type="date" class="options" id="checkin" required>
               </div> 
               <div class="form-group col-md-4">
                 <label for="checkout" class="input-label">Check-Out</label> 
-                <input type="date" class="options" id="checkout">
+                <input type="date" class="options" id="checkout" required>
               </div>
                 <button id = "bookNow" type="submit" class="btn-purple">Book Now</button>  
               <hr/>  
