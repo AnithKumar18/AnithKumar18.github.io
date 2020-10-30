@@ -31,4 +31,16 @@ var app4 = new Vue ({
             {text: "Learn Vue = In Progress"}
         ]
     }
+}); 
+ 
+var app5 = new Vue({ 
+    el: "#app-5", 
+    data:{ 
+        message:"Anith Kumar"
+    }, 
+    methods:{ 
+        reverseMessage: function() { 
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
 });
