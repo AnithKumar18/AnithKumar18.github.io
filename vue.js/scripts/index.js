@@ -31,4 +31,4 @@ var app4 = new Vue ({
             {text: "Learn Vue = In Progress"}
         ]
     }
-});
+})
