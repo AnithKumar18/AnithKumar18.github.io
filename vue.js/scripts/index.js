@@ -12,4 +12,11 @@ var app2 = new Vue({
         linkURL:"https://www.google.com.my", 
         linkText: "Go to Google Malaysia!"
     }
+}); 
+ 
+var app3 = new Vue ({ 
+    el: "#app-3", 
+    data: { 
+        seen:true
+    }
 });
