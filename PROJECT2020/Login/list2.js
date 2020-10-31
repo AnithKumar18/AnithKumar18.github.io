@@ -34,7 +34,7 @@ function GetBookings(){
         let el = document.getElementById(bookingIds[j]);  
          el.addEventListener("click", function (){  
            let theId = bookingIds[j].replace("delete","");  
-           //DeleteBooking(theId);
+           DeleteBooking(theId);
     
          });
        }
@@ -43,7 +43,19 @@ function GetBookings(){
     }); 
     } 
       
-    
+    function DeleteBooking(id){  
+      if(confirm("Are you sure you want to delete?")){ 
+        let url = 'https://api.sheety.co/0ac15c206744c39d619ade78db690364/member/registration/' + id;
+        fetch(url, {
+         method: 'DELETE',
+        })
+            .then((response) => {  
+                location.reload();
+              });
+      } else {  
+          alert("Delete cancelled");
+      }
+   
 
 
 

@@ -40,11 +40,25 @@ function GetBookings(){
         let el = document.getElementById(bookingIds[j]);  
          el.addEventListener("click", function (){  
            let theId = bookingIds[j].replace("delete","");  
-           //DeleteBooking(theId);
+           DeleteBooking(theId);
     
          });
        }
        
       
     }); 
-    } 
+    }  
+     
+    function DeleteBooking(id){  
+      if(confirm("Are you sure you want to delete?")){ 
+        let url = 'https://api.sheety.co/8a1a6f330286ba0ec0dacda0b91ee751/hotel/booking/' + id;
+        fetch(url, {
+         method: 'DELETE',
+        })
+            .then((response) => {  
+                location.reload();
+              });
+      } else {  
+          alert("Delete cancelled");
+      }
+   
