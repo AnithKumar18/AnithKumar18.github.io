@@ -43,7 +43,7 @@ function GetBookings(){
     }); 
     } 
       
-    function DeleteBooking(id){  
+function DeleteBooking(id){  
       if(confirm("Are you sure you want to delete?")){ 
         let url = 'https://api.sheety.co/0ac15c206744c39d619ade78db690364/member/registration/' + id;
         fetch(url, {
@@ -56,10 +56,7 @@ function GetBookings(){
           alert("Delete cancelled");
       }
    
-
-
-
-
+    }
 
 
 
