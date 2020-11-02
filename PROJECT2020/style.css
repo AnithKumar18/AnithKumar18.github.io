@@ -123,8 +123,9 @@ section{
   font-size: 2.5rem;   
   margin-left: .5rem; 
   opacity: .75;
-}  
- 
+} 
+
+/*Header Section*/ 
 .header{ 
     width: 100%; 
     height: 6rem; 
@@ -206,7 +207,8 @@ section{
    letter-spacing: 2px; 
    padding: 1rem; 
 } 
- 
+  
+/*First Section*/ 
 .hero{
    width: 100%; 
    height: 100vh;  
