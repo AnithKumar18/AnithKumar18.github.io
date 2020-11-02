@@ -4,7 +4,8 @@
 * {
 	box-sizing: border-box;
 }
-
+ 
+/*Create Account Section*/
 body {
   margin: 0;
   height: 100vh;
@@ -131,7 +132,8 @@ body {
 	text-decoration: none; 
 	text-align: center;
 }
-
+ 
+/*Social Media Section*/
 .social-text {
   padding: 0.7rem 0;
   font-size: 1rem; 
