@@ -657,7 +657,7 @@ h4{
 }
 /*Footer Section*/ 
  .footer{ 
-     padding: 5rem 0; 
+     padding: 3rem 0; 
      background-color: var(--purple-solid); 
      color: #fff;
  }
@@ -672,7 +672,8 @@ h4{
  
  .footer-heading{ 
      text-transform: uppercase; 
-     margin-bottom: 2.5rem;   
+     margin-bottom: 3rem;    
+     text-align: justify; 
  }
  
  .social-media{ 
@@ -686,7 +687,7 @@ h4{
     border: 2px solid var(--yellow-solid); 
     border-radius: 50%; 
     display: flex; 
-    margin-right: 2rem;  
+    margin-right: 1rem;  
     transition: background-color .5s;
  }
 
