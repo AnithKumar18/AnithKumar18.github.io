@@ -426,8 +426,14 @@ h4{
  
 .hotel-name{ 
     font-size: 2.6rem;
-} 
- 
+}  
+
+.hotel-rooms{ 
+    font-size: 1.6rem; 
+    text-align: center; 
+    margin: 1rem;
+}  
+
 .hotel-price{ 
     font-size: 1.8rem;
 } 
