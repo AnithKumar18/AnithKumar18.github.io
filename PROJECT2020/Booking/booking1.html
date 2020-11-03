@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div class="container">
@@ -61,7 +65,7 @@
                         <option>Meduim</option> 
                         <option>Small</option>
                     </select>
-              </div> 
+              </div>  
               <div class="form-group col-md-4">
                 <label for="checkin" class="input-label">Check-In</label> 
                 <input type="date" class="options" id="checkin" required>
@@ -69,6 +73,14 @@
               <div class="form-group col-md-4">
                 <label for="checkout" class="input-label">Check-Out</label> 
                 <input type="date" class="options" id="checkout" required>
+              </div> 
+              <div class="form-group col-md-4"> 
+                <label for="guestName" class="input-label">Guest Name</label> 
+                <input type="text"  id="guestName" required>
+              </div> 
+              <div class="form-group col-md-4"> 
+                <label for="guestEmail" class="input-label">Guest Email</label> 
+                <input type="email"  id="guestEmail" required>
               </div>
                 <button id = "bookNow" type="button" class="btn-purple">Book Now</button>  
               <hr/>  

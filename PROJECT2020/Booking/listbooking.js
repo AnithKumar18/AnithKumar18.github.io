@@ -18,7 +18,9 @@ function GetBookings(){
         var gchildren = json.booking[i].pc; //change 
         var groom = json.booking[i].room;
         var gcheckin = json.booking[i].checki; 
-        var gcheckout = json.booking[i].checko;
+        var gcheckout = json.booking[i].checko; 
+        var guname = json.booking[i].gname;
+        var guemail = json.booking[i].gemail;
         var gid = json.booking[i].id;  
         var buttonId = "delete" + gid;
      
@@ -29,8 +31,10 @@ function GetBookings(){
        row.insertCell(3).innerHTML = gchildren;  
        row.insertCell(4).innerHTML = groom;  
        row.insertCell(5).innerHTML = gcheckin; 
-       row.insertCell(6).innerHTML = gcheckout; 
-       row.insertCell(7).innerHTML = "<button id= '" + buttonId + "'class='btn btn-danger'>Delete</button><br/>";; 
+       row.insertCell(6).innerHTML = gcheckout;  
+       row.insertCell(7).innerHTML = guname;  
+       row.insertCell(8).innerHTML = guemail; 
+       row.insertCell(9).innerHTML = "<button id= '" + buttonId + "'class='btn btn-danger'>Delete</button><br/>";; 
 
 
        

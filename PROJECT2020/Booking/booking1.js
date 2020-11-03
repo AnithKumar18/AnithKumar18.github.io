@@ -1,4 +1,4 @@
-function BookNow(hotels,adults,children,troom,checkin,checkout){ 
+function BookNow(hotels,adults,children,troom,checkin,checkout,guestName,guestEmail){ 
     let url = 'https://api.sheety.co/8a1a6f330286ba0ec0dacda0b91ee751/hotel/booking';
     let body = {
       booking: {
@@ -7,7 +7,9 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
         pc:children, 
         room:troom,
         checki:checkin,
-        checko:checkout
+        checko:checkout, 
+        gname:guestName, 
+        gemail:guestEmail
       }
     }
     fetch(url, {
@@ -32,9 +34,11 @@ function BookNow(hotels,adults,children,troom,checkin,checkout){
           let c = document.getElementById("children").value;   
           let d = document.getElementById("troom").value;   
           let e = document.getElementById("checkin").value; 
-          let f = document.getElementById("checkout").value; 
+          let f = document.getElementById("checkout").value;  
+          let g = document.getElementById("guestName").value;  
+          let h = document.getElementById("guestEmail").value;  
 
-            BookNow(a,b,c,d,e,f);
+            BookNow(a,b,c,d,e,f,g,h);
        }); 
    
   });

@@ -21,8 +21,8 @@ body {
 	background-color: rgba(0,0,0,.8);
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 380px; 
-    height: 380px;
+    width: 480px; 
+    height: 480px;
     text-align: center; 
     overflow:auto;
 }
@@ -78,7 +78,6 @@ body {
 	outline: 0;
 	border-color: #777;
 }
-
 
 .btn-purple {
 	background-color: #8e44ad;
