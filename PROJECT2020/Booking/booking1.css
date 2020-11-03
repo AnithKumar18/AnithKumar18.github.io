@@ -7,24 +7,29 @@
  
 /*Booking Section*/
 body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  background: url(./Background/malaysia-desktop-background_020551783_166.jpg);
+  background: url(./Background/malaysia-desktop-background_020551783_166.jpg); 
   background-size: cover;
 }
 
 .container {
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 480px; 
+    width: 1200px; 
     height: 480px;
     text-align: center; 
-    overflow:auto;
+	overflow:auto;  
+	margin-top: 25px;
+} 
+ 
+.navbar{ 
+	height: 80px; 
+	background-color: purple; 
+} 
+ 
+.navbar-brand { 
+	color: white; 
+	text-align: inherit;
 }
 
 .header {
