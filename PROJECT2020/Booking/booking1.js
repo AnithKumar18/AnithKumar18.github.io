@@ -23,7 +23,7 @@ function BookNow(hotels,adults,children,troom,checkin,checkout,guestName,guestEm
     .then(json => {
     // Do something with object
     console.log(json.booking);
-           alert(json.booking.name + "successfully added"); 
+           alert(json.booking.name + " successfully added"); 
     });
   }  
   window.addEventListener("load", function(e){  
