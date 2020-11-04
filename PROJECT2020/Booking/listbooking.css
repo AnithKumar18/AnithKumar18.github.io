@@ -28,7 +28,7 @@ tr{
 } 
 .navbar{ 
 	height: 80px; 
-	background-color: var(--purple-transparent); 
+	background-color: var(--purple-transparent-alt); 
 } 
  
 .navbar-brand { 
