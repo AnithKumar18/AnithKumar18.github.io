@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap'); 
+ 
+:root {
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+} 
+
 
 * {
 	box-sizing: border-box;
@@ -24,7 +32,7 @@ body {
  
 .navbar{ 
 	height: 80px; 
-	background-color: purple; 
+	background-color: var(--purple-transparent); 
 } 
  
 .navbar-brand { 

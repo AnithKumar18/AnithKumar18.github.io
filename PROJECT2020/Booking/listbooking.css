@@ -1,3 +1,10 @@
+:root {
+  --purple-solid: #350a4f;
+  --purple-transparent: rgba(53, 10, 79, .7);
+  --purple-transparent-alt: rgba(53, 10, 79, .5);
+  --purple-light: #8f50fb;
+} 
+
 body {
     background: url(./Background/malaysia-desktop-background_020551783_166.jpg);
     background-size: cover;
@@ -21,7 +28,7 @@ tr{
 } 
 .navbar{ 
 	height: 80px; 
-	background-color: purple; 
+	background-color: var(--purple-transparent); 
 } 
  
 .navbar-brand { 
