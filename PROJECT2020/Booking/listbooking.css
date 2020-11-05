@@ -1,8 +1,5 @@
 :root {
-  --purple-solid: #350a4f;
   --purple-transparent: rgba(53, 10, 79, .7);
-  --purple-transparent-alt: rgba(53, 10, 79, .5);
-  --purple-light: #8f50fb;
 } 
 
 body {
@@ -28,7 +25,7 @@ tr{
 } 
 .navbar{ 
 	height: 80px; 
-	background-color: var(--purple-transparent-alt); 
+	background-color: var(--purple-transparent); 
 } 
  
 .navbar-brand { 
