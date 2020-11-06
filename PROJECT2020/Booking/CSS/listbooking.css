@@ -27,7 +27,8 @@ tr{
 .header h1 {
 	margin: 0; 
   font-weight: normal; 
-  color: white; 
+  color: white;  
+  margin-bottom: 25px; 
   border-bottom: 1px solid #f0f0f0;
 } 
 

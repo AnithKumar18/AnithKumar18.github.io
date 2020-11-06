@@ -21,7 +21,7 @@ body {
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     width: 1200px; 
-    height: 480px;
+    height: 500px;
     text-align: center; 
 	overflow:auto;  
 	margin-top: 25px;
@@ -43,7 +43,6 @@ body {
 	padding: 20px 40px; 
 	color: white;  
 	text-align: center; 
-	margin-bottom: 25px;
 }
 
 .header h1 {
@@ -106,12 +105,12 @@ body {
 } 
  
 .btn {
-  background-color: var(--gradient-color);
+  background-color: dodgerblue;
   border: none;
   color: white;
   padding: 20px 16px;
   cursor: pointer; 
-  width: 40px; 
+  width: 80px; 
   align-items: center;
 }
 
