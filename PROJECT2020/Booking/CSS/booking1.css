@@ -26,16 +26,6 @@ body {
 	overflow:auto;  
 	margin-top: 25px;
 } 
- 
-.navbar{ 
-	height: 80px; 
-	background-color: var(--purple-transparent); 
-} 
- 
-.navbar-brand { 
-	color: white; 
-	text-align: inherit;
-}
 
 .header {
 	border-bottom: 1px solid #f0f0f0;
@@ -104,26 +94,37 @@ body {
 	margin: 30px 1px ;  
 } 
  
-.btn {
-  background-color: dodgerblue;
-  border: none;
-  color: white;
-  padding: 20px 16px;
-  cursor: pointer; 
-  width: 80px; 
-  align-items: center;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
-}
- 
 a{ 
 	font-size: 16px;
 	position: relative ; 
 	width: 150px; 
 	height: 40px; 
 	margin: 35px 1px ;  
+} 
+ 
+/*Navigation Bar*/  
+.navbar{ 
+	height: 80px; 
+	background-color: var(--purple-transparent); 
+} 
+ 
+.navbar-brand { 
+	color: white; 
+	text-align: inherit;
+} 
+
+.btn {
+	background-color: dodgerblue;
+	border: none;
+	color: white;
+	padding: 20px 16px;
+	cursor: pointer; 
+	width: 80px; 
+	align-items: center;
+}
+  
+  /* Darker background on mouse-over */
+.btn:hover {
+	background-color: RoyalBlue;
 }
 
